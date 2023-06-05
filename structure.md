@@ -1,0 +1,60 @@
+# Pokémon
+
+- Number
+- Name
+- Description
+- Image
+- Pokémon Type
+  - Starter
+  - Common
+  - Mythic
+  - Legendary
+- Region
+  - Midwest
+  - North East
+  - North
+  - Southeast
+  - South
+- Types
+  - Water
+  - Fire
+  - Psychic
+  - Steel
+  - Ice
+  - Synthetic
+  - Cosmic
+  - Bug
+  - Sound
+  - Dragon
+  - Fighting
+  - Dark
+  - Electric
+  - Normal
+  - Ground
+  - Fairy
+  - Rock
+  - Poison
+  - Ghost
+  - Grass
+  - Flying
+- Attributes
+  - HP
+  - Atk
+  - Def
+  - Special Atk
+  - Special Def
+  - Speed
+- Ability
+- Weight
+  - Range of values
+- Height
+  - Range of values
+- Weakness
+- Strengths
+- Imune
+- Evolutions
+- Reference
+  - Reference text
+- Threat of Extinction
+
+> Written with [StackEdit](https://stackedit.io/).
