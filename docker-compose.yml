@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:16beta1-bullseye
+    container_name: bagdex-api
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: bag
+    ports:
+      - 5432:5432
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1GB
+        reservations:
+          cpus: '2'
+          memory: 1GB
