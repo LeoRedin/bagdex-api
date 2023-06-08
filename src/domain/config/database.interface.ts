@@ -1,4 +1,4 @@
-export interface DatabaseConfig {
+export interface IDatabaseConfig {
   getDatabaseHost(): string;
   getDatabasePort(): string;
   getDatabaseUser(): string;
