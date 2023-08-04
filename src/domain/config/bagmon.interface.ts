@@ -30,12 +30,6 @@ export interface IAttribute {
   value: number;
 }
 
-export interface IWeightAndHeight {
-  min: number;
-  max: number;
-  unit: string;
-}
-
 export interface IReference {
   name: string;
   scientificName: string;

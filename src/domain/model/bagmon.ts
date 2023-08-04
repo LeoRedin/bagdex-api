@@ -2,14 +2,14 @@ import {
   IAttribute,
   IReference,
   IThreatOfExtinction,
-  IWeightAndHeight,
   TPokemonType,
   TRegion,
   TTypes,
 } from '../config/bagmon.interface';
 
 export class Bagmon {
-  number: number;
+  id: number;
+  number: string;
   name: string;
   description: string;
   image?: string;
@@ -18,8 +18,8 @@ export class Bagmon {
   types: Array<TTypes>;
   attributes: Array<IAttribute>;
   ability: string;
-  weight: IWeightAndHeight;
-  height: IWeightAndHeight;
+  weight: number[];
+  height: number[];
   weakness?: Array<TTypes>;
   strengths?: Array<TTypes>;
   imune?: Array<TTypes>;
