@@ -27,20 +27,20 @@ export type TTypes =
 
 export interface IAttribute {
   name: 'HP' | 'Ataque' | 'Defesa' | 'Ataque E' | 'Defesa E' | 'Velocidade';
-  value: Number;
+  value: number;
 }
 
 export interface IWeightAndHeight {
-  min: Number;
-  max: Number;
-  unit: String;
+  min: number;
+  max: number;
+  unit: string;
 }
 
 export interface IReference {
-  name: String;
-  scientificName: String;
-  internationalName: String;
-  description: String;
+  name: string;
+  scientificName: string;
+  internationalName: string;
+  description: string;
 }
 
 export interface IThreatOfExtinction {

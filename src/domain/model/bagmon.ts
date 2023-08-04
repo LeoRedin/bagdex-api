@@ -9,15 +9,15 @@ import {
 } from '../config/bagmon.interface';
 
 export class Bagmon {
-  number: Number;
-  name: String;
-  description: String;
-  image?: String;
+  number: number;
+  name: string;
+  description: string;
+  image?: string;
   pokemonType: TPokemonType;
   region: TRegion;
   types: Array<TTypes>;
   attributes: Array<IAttribute>;
-  ability: String;
+  ability: string;
   weight: IWeightAndHeight;
   height: IWeightAndHeight;
   weakness?: Array<TTypes>;

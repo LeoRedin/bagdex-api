@@ -24,7 +24,7 @@ export class EnvironmentConfigService implements IDatabaseConfig {
   getDatabaseSchema(): string {
     return this.configService.get<string>('DATABASE_SCHEMA');
   }
-  getDatabaseSync(): Boolean {
-    return this.configService.get<Boolean>('DATABASE_SYNC');
+  getDatabaseSync(): boolean {
+    return this.configService.get<boolean>('DATABASE_SYNC');
   }
 }
