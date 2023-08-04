@@ -5,7 +5,12 @@ import { ExceptionsModule } from './infrastructure/exceptions/exceptions.module'
 import { TypeormModule } from './infrastructure/config/typeorm/typeorm.module';
 
 @Module({
-  imports: [EnvironmentConfigModule, LoggerModule, ExceptionsModule, TypeormModule],
+  imports: [
+    EnvironmentConfigModule,
+    LoggerModule,
+    ExceptionsModule,
+    TypeormModule,
+  ],
   controllers: [],
   providers: [],
 })
