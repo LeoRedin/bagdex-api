@@ -7,7 +7,7 @@ import {
   TTypes,
 } from '../config/bagmon.interface';
 
-export class Bagmon {
+export class BagmonModel {
   id: number;
   number: string;
   name: string;
@@ -23,7 +23,7 @@ export class Bagmon {
   weakness?: Array<TTypes>;
   strengths?: Array<TTypes>;
   imune?: Array<TTypes>;
-  evolutions?: Array<Bagmon>;
+  evolutions?: Array<string>;
   reference: IReference;
   threatOfExtinction: IThreatOfExtinction;
 }

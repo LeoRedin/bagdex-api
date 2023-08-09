@@ -1,7 +1,15 @@
+import {
+  IAttribute,
+  IReference,
+  IThreatOfExtinction,
+  TPokemonType,
+  TRegion,
+  TTypes,
+} from 'src/domain/config/bagmon.interface';
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class Bagmon {
+export class BagmonEntity {
   @PrimaryGeneratedColumn({ type: 'integer' })
   id: number;
 
@@ -18,16 +26,16 @@ export class Bagmon {
   image: string;
 
   @Column('varchar', { length: 255 })
-  pokemonType: string;
+  pokemonType: TPokemonType;
 
   @Column('varchar', { length: 255 })
-  region: string;
+  region: TRegion;
 
   @Column()
-  types: string[];
+  types: TTypes[];
 
   @Column()
-  attributes: string[];
+  attributes: IAttribute[];
 
   @Column('varchar', { length: 255 })
   ability: string;
@@ -39,23 +47,23 @@ export class Bagmon {
   height: number[];
 
   @Column()
-  weakness: string[];
+  weakness: TTypes[];
 
   @Column()
-  strengths: string[];
+  strengths: TTypes[];
 
   @Column()
-  imune: string[];
+  imune: TTypes[];
 
   @Column()
   evolutions: string[];
 
   @Column('varchar', { length: 255 })
-  reference: string;
+  reference: IReference;
 
   @Column('varchar', { length: 255 })
   referenceText: string;
 
   @Column('varchar', { length: 255 })
-  threatOfExtinction: string;
+  threatOfExtinction: IThreatOfExtinction;
 }
